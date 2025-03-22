@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TopCalculator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/cardDark</item>
+
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/cardDark</item>
+
+    </style>
+
+<!--    <style name="RadiusImageView8" parent="">-->
+<!--        <item name="cornerFamily">rounded</item>-->
+<!--        <item name="cornerSize">8dp</item>-->
+<!--    </style>-->
+<!--    <style name="RadiusImageView15" parent="ShapeAppearance.MaterialComponents.LargeComponent">-->
+<!--        <item name="cornerFamily">rounded</item>-->
+<!--        <item name="cornerSize">15dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomRadioButton" parent="Widget.Material3.CompoundButton.RadioButton">-->
+<!--        <item name="buttonTint">@color/appBlue</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--    </style>-->
+
+
+    <color name="cardColor">@color/cardLight</color>
+
+    <color name="black_white_High">@color/black</color>
+    <color name="background_color">@color/appLight</color>
+
+    <color name="blue_coolBlue">@color/appBlue</color>
+    <color name="blue_white">@color/appBlue</color>
+    <color name="blue_lightGray">@color/appBlue</color>
+    <color name="black_blue">@color/appDark</color>
+    <color name="blue_appDark">@color/appBlue</color>
+    <color name="white_coolblue">@color/white</color>
+
+    <color name="textColor">@color/textLight</color>
+    <color name="iconColor">@color/textLight</color>
+
+    <color name="primaryColor">@color/primaryLight</color>
+    <color name="outlineColor">@color/outlineLight</color>
+    <color name="grayColorTV">@color/grayLight</color>
+    <color name="formColor">@color/formLight</color>
+
+    <color name="background_trans70">@color/appLightTrans70</color>
+    <color name="background_trans90">@color/appLightTrans90</color>
+    <color name="background_trans50">@color/appLightTrans50</color>
+    <color name="form_card">@color/formLight</color>
+
+    <color name="progressBarColor">@color/appBlue</color>
+
+    <color name="iconBgColor">@color/iconBackgroundLight</color>
+    <color name="black_n_card">@color/appDark</color>
+
+    <color name="greenColor">@color/greenLight</color>
+    <color name="cover_photo_bg">#8181D3</color>
+
+    <color name="defaultColorTV">@color/defaultBlack</color>
+    <color name="highlightColor">@color/appLightTrans10</color>
+
+</resources>
+
