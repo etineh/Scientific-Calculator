@@ -33,18 +33,16 @@ A modern, high-precision **Scientific Calculator** built for Android. Designed w
 
 | Dark Screen | Light Screen | 2nd func | History |
 |------------|-----------|--------------|--------------|
-| <img width="350" alt="Screenshot 2025-06-14 at 21 22 25" src="https://github.com/user-attachments/assets/cfb8e618-6308-43d6-b1f3-c70e1f3e8eb2" /> |
-<img width="350" alt="Screenshot 2025-06-14 at 21 24 11" src="https://github.com/user-attachments/assets/f618a232-f8ef-44c6-b6f9-434405d6377f" /> |
-<img width="350" alt="Screenshot 2025-06-14 at 21 24 59" src="https://github.com/user-attachments/assets/48e6386d-3232-4d52-98ad-a2debc42fa04" /> |
-<img width="350" alt="Screenshot 2025-06-14 at 21 25 28" src="https://github.com/user-attachments/assets/ec7c2a6c-789e-48c5-b66f-53320ee0b660" /> |
+| <img width="350" alt="Screenshot 2025-06-14 at 21 22 25" src="https://github.com/user-attachments/assets/cfb8e618-6308-43d6-b1f3-c70e1f3e8eb2" /> | <img width="350" alt="Screenshot 2025-06-14 at 21 24 11" src="https://github.com/user-attachments/assets/f618a232-f8ef-44c6-b6f9-434405d6377f" /> | <img width="350" alt="Screenshot 2025-06-14 at 21 24 59" src="https://github.com/user-attachments/assets/48e6386d-3232-4d52-98ad-a2debc42fa04" /> | <img width="350" alt="Screenshot 2025-06-14 at 21 25 28" src="https://github.com/user-attachments/assets/ec7c2a6c-789e-48c5-b66f-53320ee0b660" /> |
 
 ---
 
 ## 🛠 Tech Stack
 
 - **Language:** Kotlin
-- - **Testing:** JUnit
+- **Testing:** JUnit
 - **UI:** Android XML, Material Components
+- **Library:** exp4j
 - **Theming:** AppCompat DayNight
 
 ---
@@ -68,7 +66,7 @@ This is a personal learning project. Suggestions, bug reports, or pull requests 
 
 ## 🧠 What I Learned
 
-- Building custom scientific expressions from scratch  
+- Building custom scientific expressions from scratch using exp4j library 
 - Parsing user input safely and displaying real-time output  
 - Writing unit tests for calculation logic  
 - Supporting theme switching and optimizing UI for various screen sizes
