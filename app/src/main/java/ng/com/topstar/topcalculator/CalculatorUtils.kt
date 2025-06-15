@@ -11,6 +11,7 @@ import android.widget.EditText
 import androidx.core.content.ContextCompat
 import net.objecthunter.exp4j.ExpressionBuilder
 import net.objecthunter.exp4j.function.Function
+import ng.com.topstar.topcalculator.CalculatorUtils.formatWithCommas
 import ng.com.topstar.topcalculator.CalculatorUtils.isOperator
 import java.lang.Math.toDegrees
 import java.lang.Math.toRadians
@@ -401,18 +402,21 @@ object CalculatorUtils {
             val isInsideGcd = prefix.contains(Regex("\\bgcd\\(x:\\s*[^)]*$")) && suffix.contains(")")
 
             if (isInsideLog || isInsideRand || isInsideLcm || isInsideGcd) {
-                // Skip formatting, keep raw number
-                result.append(numberStr)
+                result.append(numberStr) // Skip formatting
             } else {
-                // Format the number
                 val decimalIndex = numberStr.indexOf('.')
                 if (decimalIndex == -1) {
-                    val number = numberStr.toLongOrNull() ?: numberStr
-                    result.append(String.format("%,d", number))
+                    val number = numberStr.toLongOrNull()
+                    result.append(
+                        number?.let { String.format("%,d", it) } ?: numberStr
+                    )
                 } else {
-                    val intPart = numberStr.substring(0, decimalIndex).toLongOrNull() ?: numberStr
+                    val intPartStr = numberStr.substring(0, decimalIndex)
                     val decPart = numberStr.substring(decimalIndex)
-                    result.append(String.format("%,d", intPart) + decPart)
+                    val intPart = intPartStr.toLongOrNull()
+                    result.append(
+                        intPart?.let { String.format("%,d", it) + decPart } ?: numberStr
+                    )
                 }
             }
 
@@ -654,4 +658,11 @@ fun String.proceedToCalculator(): Boolean {
 //            && (last() != '√' && last() != 'P' && last() != 'C'))
 //
 //}
+
+fun Double.roundToWithComma(maxDecimals: Int): String {
+    return "%.${maxDecimals}f".format(this).trimEnd('0').trimEnd('.').formatWithCommas()
+}
+
+val String.removeComma: String
+    get() = this.replace(",", "")
 
