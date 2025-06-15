@@ -50,7 +50,7 @@ A modern, high-precision **Scientific Calculator** built for Android. Designed w
 ## 🧪 How to Run
 
 1. Clone the repo  
-   `git clone https://github.com/etineh/top-calculator.git`
+   `git clone https://github.com/etineh/Scientific-Calculator.git`
 
 2. Open the project in **Android Studio**
 
